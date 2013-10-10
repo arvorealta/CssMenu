@@ -1,180 +1,237 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Logo </title>
+<title> Supervisor Web </title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="css/main.css">
+
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+<link rel="stylesheet" href="css/master.css" />
+<noscript> <link rel="stylesheet" href="css/mobile.css" /> </noscript>
+<script>
+// Edit to suit your needs.
+var ADAPT_CONFIG = {
+  // Where is your CSS?
+  path: 'css/',
+
+  // false = Only run once, when page first loads.
+  // true = Change on window resize and page tilt.
+  dynamic: true,
+
+  // First range entry is the minimum.
+  // Last range entry is the maximum.
+  // Separate ranges  by "to" keyword.
+  range: [
+    //'0px    to 760px  = mobile.css',
+    //'760px  to 980px  = 960.css',
+    //'980px  to 1280px = 960.css',
+    '1280px to 1600px = 1200.css',
+    '1600px to 1940px = 1560.css',
+    '1940px to 2540px = 1920.css',
+    '2540px           = 2520.css'
+  ]
+};
+</script>
+<script src="js/adapt.js"></script>
 </head>
 
 <body>
-<div class="container cf">
-    <div id="logo">
-        <a href="#">
-            <span class="icon" id="icon_logo"> s </span>
-            <span id="label_logo">Logo</span>
-        </a>
+
+<div class="container">
+
+<!-- `menu
+**************************************************************************************************** -->
+  <div class="menu">
+
+    <div class="holder_a first">
+      <a href="#"><span>A</span> <span>Supervisorweb</span></a>
+      <span class="divider"></span>
+
+      <ul class="shadow holder_b">
+        <li class="line"> <a href="#"> <span> w </span> <span>Telemetria</span> </a> </li>
+        <li class="line"> <a href="#"> <span> w </span> <span>Autotrac Caminhoneiro</span> </a> </li>
+        <li class="line"> <a href="#"> <span> w </span> <span>TPMS</span> </a> </li>
+        <li class="line"> <a href="#"> <span> w </span> <span>Informações gerenciais</span> </a> </li>
+        <li class="line"> <a href="#"> <span> w </span> <span>Jornada</span> </a> </li>
+      </ul>
+
     </div>
 
-    <ul id="top_menu">
-        <li > <span class="icon_top_menu"> <a href="#"> y </a> </span> </li>
-        <li > <span class="icon_top_menu"> <a href="#"> k </a> </span> </li>
-        <li > <span class="icon_top_menu"> <a href="#"> h </a> </span> </li>
-        <li > <span class="icon_top_menu"> <a href="#"> l </a> </span> </li>
-        <li > <span class="label_top_menu"> <a href="#"> Jhon Baskiah</a> </span> </li>
-    </ul>
+    <div class="holder_a second">
+      <a href="#"><span>A</span> <span>Início</span></a>
+      <span class="divider"></span>
+      
+      <ul class="shadow holder_b">
+        <li class="line"> <a href="#"> <span> w </span> <span>Histórico</span> </a> 
+          
+          <ul class="shadow holder_c">
+            <li class="line"> <a href="#"> <span>Últimas listagens</span> </a> 
+               
+               <ul class="shadow holder_d">
+                  <li class="line"> <a href="#"> <span>Últimos eventos</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Últimas posições</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Últimas mensagens administrativas </span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Últimas solicitações de roteamento</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Autotrac Caminhoneiro</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Últimos serviços da HUB</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Login/Logout por Motorista</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Login/Logout por Veículo</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Operações de motoristas</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Transferência entre Contas Celular</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Acessos</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Restrições de acesso</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Personalizados</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Observações</span> </a> </li>
+              </ul>
+
+            </li>
+            <li class="divider_02"></li>
+            <li class="line"> <a href="#"> <span>Notificações</span> </a> 
+                
+                <ul class="shadow holder_d">
+                  <li class="line"> <a href="#"> <span>Não lidas</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Não enviadas</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Retornos atuais</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Envios atuais</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Envio e retorno</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Comandos de OBC</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Alertas OBC</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Comandos e alertas OBC</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Comandos de alertas OBC</span> </a> </li>
+                </ul> 
+            
+            </li>
+            <li class="divider_02"></li>
+            <li class="line"> <a href="#"> <span>Apontamentos</span> </a> 
+              
+                <ul class="shadow holder_d">
+                  <li class="line"> <a href="#"> <span>Últimos apontamentos</span> </a> </li>
+                  <li class="divider_02"></li>
+                  <li class="line"> <a href="#"> <span>Apontamentos unificados com eventos</span> </a> </li>
+                </ul>
+            
+            </li>
+            <li class="divider_02"></li>
+            <li class="line"> <a href="#"> <span>Auditoria</span> </a> 
+              
+              <ul class="shadow holder_d">
+                <li class="line"> <a href="#"> <span>Auditoria de Sessão</span> </a> </li>
+                <li class="divider_02"></li>
+                <li class="line"> <a href="#"> <span>Auditoria de configuração de sistema</span> </a> </li>
+              </ul>
+            
+            </li>
+            <li class="divider_02"></li>
+            <li class="line"> <a href="#"> <span>Histórico de Viagens</span> </a> 
+              
+              <ul class="shadow holder_d">
+                <li class="line"> <a href="#"> <span>Últimas Viagens</span> </a> </li>
+                <li class="divider_02"></li>
+                <li class="line"> <a href="#"> <span>Diário de Viagens</span> </a> </li>
+                <li class="divider_02"></li>
+                <li class="line"> <a href="#"> <span>Performance da Viagem</span> </a> </li>
+              
+            </li>
+            </ul>
+          </ul>
+        </li>
+        <li class="divider_02"></li>
+        <li class="line"> <a href="#"> <span> e </span> <span>Veículos</span> </a> </li>
+        <li class="divider_02"></li>
+        <li class="line"> <a href="#"> <span> r </span> <span>Viagem</span> </a> 
+          
+          <ul class="holder_c">
+            <li class="line"> <a href="#"> <span>Planos</span> </a> 
+              
+              <ul class="shadow holder_d">
+                <li class="line"> <a href="#"> <span>Planos de Viagem</span> </a> </li>
+                <li class="divider"></li>
+                <li class="line"> <a href="#"> <span>Grupos de Plano de Viagem</span> </a> </li>
+                <li class="divider"></li>
+                <li class="line"> <a href="#"> <span>Associar Veículo ao Plano de Viagem</span> </a> </li>
+                <li class="divider"></li>
+                <li class="line"> <a href="#"> <span>Planos de Viagem Vs. Grupos de Plano de Viagem</span> </a> </li>
+              </ul>    
+
+            </li>
+            <li class="divider_02"></li>
+            <li class="line"> <a href="#"> <span>Segurança</span> </a> </li>
+            <li class="divider_02"></li>
+            <li class="line"> <a href="#"> <span>Percurso e Eventos</span> </a> </li>
+            <li class="divider_02"></li>
+            <li class="line"> <a href="#"> <span>Pontos de atuação</span> </a> </li>
+          </ul>
+
+        </li>
+        <li class="divider_02"></li>
+        <li class="line"> <a href="#"> <span> t </span> <span>OBC</span> </a> </li>
+        <li class="divider_02"></li>
+        <li class="line"> <a href="#"> <span> y </span> <span>Mensagens</span> </a> </li>
+        <li class="divider_02"></li>
+        <li class="line"> <a href="#"> <span> u </span> <span>Usuários</span> </a> </li>
+        <li class="divider_02"></li>
+        <li class="line"> <a href="#"> <span> i </span> <span>Mapa</span> </a> </li>
+        <li class="divider_02"></li>
+        <li class="line"> <a href="#"> <span> o </span> <span>Roteamento</span> </a> </li>
+        <li class="divider_02"></li>
+        <li class="line"> <a href="#"> <span> p </span> <span>Autotrac Caminhoneiro</span> </a> </li>
+        <li class="divider_02"></li>
+        <li class="line"> <a href="#"> <span> a </span> <span>+ Opções</span> </a> </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="menu" id="snd">
+    <div>
+      <a href="#"><span>T</span> <span>Grade padrão</span></a>
+      <span class="divider"></span>
+      <ul></ul>
+    </div>
+    <div>
+      <a href="#"><span>T</span> <span>Filtrar</span></a>
+      <span class="divider"></span>
+      <ul></ul>
+    </div>
+  </div>
+
+<!-- `menu_admin
+**************************************************************************************************** -->
+
+  <div class="menu_admin">
+    <div>Rafaela Bher (GDP 2300), Sair
+    </div>
+
+    <div> 
+      <span>Último acesso : 20/09/2013 </span>
+      <span>Supervisorweb Versao 3.5.17 (101)</span>
+      <span>Próxima atualização 30s </span>
+    </div>
+  </div>
+
 </div>
 
-<!-- Menu à esquerda --> 
-<div class="container cf">
-    <div class="menu">
-            <a class="line" href="#"> <span class="icon icon_menu" > q </span> <span class="label_menu">Begin</span> </a>
-            <span class="divider"></span>
-            <ul class="shadow">
-                <li class="line"> <a href="#"> <span class="icon icon_menu"> w </span> <span class="label_menu">Gamers</span> </a> 
-                    <ul class="shadow">
-                        <li class="line"> <a href="#"> <span class="label_menu">Crixalis</span> </a> 
-                            <ul class="shadow">
-                                <li class="line"> <a href="#"> <span class="label_menu">Last</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">None<span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Before</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Believe</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Auto</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Carrier</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Storm</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Flyer</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Keyboard</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Skylar</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Tomorrow</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Burn</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Cruzade</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Lone</span> </a> </li>
-                            </ul>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="line"> <a href="#"> <span class="label_menu">Notes</span> </a> 
-                            <ul class="shadow">
-                                <li class="line"> <a href="#"> <span class="label_menu">Invalid</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Hope</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Return</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Coounty</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Sending</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Command</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">General</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Letter</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Homer</span> </a> </li>
-                            </ul>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="line"> <a href="#"> <span class="label_menu">Local</span> </a> 
-                            <ul class="shadow">
-                                <li class="line"> <a href="#"> <span class="label_menu">Hud</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Points</span> </a> </li>
-                            </ul>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="line"> <a href="#"> <span class="label_menu">Brew</span> </a> 
-                            <ul class="shadow">
-                                <li class="line"> <a href="#"> <span class="label_menu">Pierce</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Ambar</span> </a> </li>
-                            </ul>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="line"> <a href="#"> <span class="label_menu">Second</span> </a> 
-                            <ul class="shadow">
-                                <li class="line"> <a href="#"> <span class="label_menu">Spike</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Vange</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Spirit</span> </a> </li>
-
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="divider"></li>
-                <li class="line"> <a href="#"> <span class="icon icon_menu"> e </span> <span class="label_menu">Jonze</span> </a> </li>
-                <li class="divider"></li>
-                <li class="line"> <a href="#"> <span class="icon icon_menu"> r </span> <span class="label_menu">Trip</span> </a> 
-                    <ul class="shadow">
-                        <li class="line"> <a href="#"> <span class="label_menu">Planing</span> </a> 
-                            <ul class="shadow">
-                                <li class="line"> <a href="#"> <span class="label_menu">Lone Range</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Phantom</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Nyx</span> </a> </li>
-                                <li class="divider"></li>
-                                <li class="line"> <a href="#"> <span class="label_menu">Megaman</span> </a> </li>
-                            </ul>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="line"> <a href="#"> <span class="label_menu">Bumble</span> </a> </li>
-                        <li class="divider"></li>
-                        <li class="line"> <a href="#"> <span class="label_menu">Oblivion</span> </a> </li>
-                        <li class="divider"></li>
-                        <li class="line"> <a href="#"> <span class="label_menu">Jobs</span> </a> </li>
-                    </ul>
-                </li>
-                <li class="divider"></li>
-                <li class="line"> <a href="#"> <span class="icon icon_menu" > t </span> <span class="label_menu">Fire</span> </a> </li>
-                <li class="divider"></li>
-                <li class="line"> <a href="#"> <span class="icon icon_menu" > y </span> <span class="label_menu">AcidBurn</span> </a> </li>
-                <li class="divider"></li>
-                <li class="line"> <a href="#"> <span class="icon icon_menu" > u </span> <span class="label_menu">User</span> </a> </li>
-                <li class="divider"></li>
-                <li class="line"> <a href="#"> <span class="icon icon_menu" > i </span> <span class="label_menu">Tron</span> </a> </li>
-                <li class="divider"></li>
-                <li class="line"> <a href="#"> <span class="icon icon_menu" > o </span> <span class="label_menu">Torrer</span> </a> </li>
-                <li class="divider"></li>
-                <li class="line"> <a href="#"> <span class="icon icon_menu" > p </span> <span class="label_menu">Rikin</span> </a> </li>
-                <li class="divider"></li>
-                <li class="line"> <a href="#"> <span class="icon icon_menu" > a </span> <span class="label_menu">Hidden</span> </a> </li>
-            </ul>
-    </div>
-
-    <div class="filter">
-        <input type="text" placeholder="Digite aqui palavras chave para filtro ...">
-        <select> 
-            <option> Categoria </option>
-            <option> Nome </option>
-            <option> Número </option>
-            <option> Data e Hora </option>
-            <option> Última localização </option>
-            <option> Perfil OBC </option>
-        </select>
-        <select id="second"> 
-            <option> Método </option>
-            <option> Contém </option>
-            <option> Exato </option>
-            <option> Começa com </option>
-        </select>
-        <div> <a href="#"><span>Filtrar</span> <img src="images/lupa.png"> </a></div>
-    </div>
-</div>    
-
-
 </body>
+
 </html>
