@@ -1,0 +1,325 @@
+/*
+ * CSS
+ * written by Márcio da Costa
+ * 
+ */
+
+/*------------------------------------*\
+    BASE STYLING
+\*------------------------------------*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot');
+    src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.woff') format('woff'),
+        url('fonts/icomoon.ttf') format('truetype'),
+        url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {   
+    font-family: verdana;
+    text-decoration: none;  
+    background-color:#f4f4f4;   
+    font-size: 12px;
+    color: black;
+}
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    color: black;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+ }
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img{
+    border:0;
+}
+q:before,q:after{
+    content:'';
+}
+.cf:before,
+.cf:after {
+  content:"";
+  display:table;
+}
+.cf:after {
+clear:both;
+}
+
+.icon {   
+    font-family: icomoon;
+    font-size: 22px;
+}
+/*------------------------------------*\
+    containers
+\*------------------------------------*/
+.container{
+    position: relative;
+    width: 1370px;
+    margin: 0px auto;
+}
+/*------------------------------------*\
+    Logo
+\*------------------------------------*/
+#logo {
+    float: left;
+    display: inline-block;
+    width: 206px;
+    height: 70px;
+}
+
+#icon_logo {
+    display: inline-block;
+    padding:20px 0px 0px 6px;
+    color: #0387cf;
+    float: left;
+}
+
+#label_logo {
+    display: inline-block;
+    padding:25px 0px 0px 10px;
+    color: #0387cf;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*------------------------------------*\
+    Top - Menu
+\*------------------------------------*/
+
+#top_menu {
+    float: right;
+    list-style: none;
+    height: 70px;
+}
+
+#top_menu li {
+    float: left;
+    height: 70px; 
+}
+#top_menu li span a{
+    color: #7a7a7a;
+}
+#top_menu li span{
+    display: block;
+    color: #7a7a7a;
+    
+}
+.icon_top_menu {    
+    font-family: icomoon;
+    font-size: 22px;
+    padding: 20px 0px 0px 20px;
+}
+.label_top_menu {
+    padding: 25px 0px 0px 60px;
+} 
+/*------------------------------------*\
+    Menu 01
+\*------------------------------------*/
+
+.menu {
+    position: absolute;
+}
+/* ------- hide ------- */
+.menu > ul{ 
+    display: none;
+}
+.menu:hover > ul{
+    display: block;
+}
+.divider {
+    height: 1px;
+    background-color: #d7d7d7;
+    display: block;
+    float: none;
+}
+.line {
+    background-color: #e2e2e2;
+    width: 205px;
+    height: 35px;
+    display: block;
+    position: relative;
+    border-right: 6px solid #e2e2e2;
+}
+
+a.line {
+    background-color: #f4f4f4;
+    border-right: 6px solid #0387cf;
+}
+a.line span {
+    color: #0387cf;
+}
+span {
+    float: left;
+}
+.menu > ul > li.line:hover {
+    background-color: #f4f4f4;
+    border-right: 6px solid #0387cf;
+}
+.menu > ul > li.line:hover > a > span{
+    color: #0387cf;
+}
+
+
+
+/* ------- menu 02 ------- */
+
+
+.menu ul > li > ul {
+    visibility: hidden;
+    left: 205px;                   /*   important shit */
+    position: absolute;
+}
+
+.menu ul > li > ul > li.line{
+    background-color: #cecece;
+    border-right: 6px solid #cecece;
+    border-left: 1px solid #c4c4c4;
+}
+.menu ul > li:hover > ul {
+    visibility: visible;
+}
+.menu ul > li > ul > li.divider{
+    background-color: #c4c4c4;
+}
+.menu > ul > li.line > ul > li.line:hover {
+    background-color: #e2e2e2;
+    border-right: 6px solid #0387cf;
+}
+.menu > ul > li.line > ul > li.line > a > span{
+    color: black;
+    padding-left: 20px !important;
+}
+.menu > ul > li.line > ul > li.line:hover > a > span{
+    color: #0387cf;
+}
+
+/* ------- menu 03 ------- */
+
+.menu ul > li > ul > li > ul{
+    visibility: hidden;
+    left: 204px ;                   /*   important shit */
+    position: absolute;
+}
+
+.menu ul > li > ul > li > ul > li.line{
+    background-color: #b5b5b5;
+    border-right: 6px solid #b5b5b5;
+    border-left: 1px solid #acacac;
+    width: 400px;
+}
+.menu ul > li > ul > li:hover > ul {
+    visibility: visible;
+}
+.menu ul > li > ul > li > ul > li.divider{
+    background-color: #acacac;
+}
+.menu > ul > li.line > ul > li > ul > li.line:hover {
+    background-color: #e2e2e2;
+    border-right: 6px solid #0387cf;
+}
+.menu > ul > li.line > ul > li > ul > li.line > a > span{
+    color: black;
+    padding-left: 20px !important;
+}
+.menu > ul > li.line > ul > li > ul > li.line:hover > a > span{
+    color: #0387cf;
+}
+
+/* ------- menu-alone ------- */
+
+.icon_menu {
+    padding:5px;
+}
+.label_menu {
+    padding:10px 5px;
+}
+
+   
+/*------------------------------------*\
+    Effects
+\*------------------------------------*/
+
+.shadow {
+  -moz-box-shadow:    1px 1px 1px 0px #b7b7b7;
+  -webkit-box-shadow: 1px 1px 1px 0px #b7b7b7;
+  box-shadow:         1px 1px 1px 0px #b7b7b7;
+}
+
+/*------------------------------------*\
+    Filters
+\*------------------------------------*/
+
+.filter {
+    position: relative;
+    height: 35px;
+    float: right;
+    width: 760px;
+}
+
+.filter > input {
+    position: absolute;
+    height: 26px;
+    width: 322px;
+    top: 5px;
+    padding-left: 12px;
+    border: 1px solid #d7d7d7;
+}
+
+.filter > select {
+  -webkit-appearance: none;
+  background-image: url(../images/select.png);
+  background-position: center right 4px;
+  background-repeat: no-repeat;
+  background-color: #e6e6e6;
+  
+  border: 1px solid #d7d7d7;
+  position: absolute;
+  top: 5px;
+  left: 328px;
+  padding-left: 4px;
+  overflow: hidden;
+  
+  border-radius: 0px;
+  white-space: nowrap;
+  height: 26px;
+  width: 150px;
+}
+.filter > select#second {
+    left: 484px;
+}
+.filter > div {
+    background-color: #078ccc;
+    height: 26px;
+    width: 115px;
+
+    position: absolute;
+    top: 5px;
+    left: 640px;
+}
+.filter > div > a  {
+    height: 26px;
+    width: 115px;
+    display: block;
+}
+.filter > div > a > span {
+    position: relative;
+    top: 5px;
+    padding-left: 10px;
+    color: white;
+}
+.filter > div > a > img {
+    position: relative;
+    left:45px;
+    top: 7px;
+}
