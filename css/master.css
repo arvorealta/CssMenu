@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot');
+    src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.woff') format('woff'),
+        url('fonts/icomoon.ttf') format('truetype'),
+        url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+* { 
+  margin: 0px; 
+  padding: 0px; 
+  text-decoration: none;}
+body {
+  color: #333; 
+  background-color: #f4f4f4; 
+  font-family: arial, sans-serif; 
+  text-decoration: none; 
+  font-size: 12px; 
+  color: black;}
+
+a {text-decoration: none; color: black;}
+small { font-size: 11px;}
+
+*, *:before, *:after { -moz-box-sizing: border-box;  -webkit-box-sizing: border-box; box-sizing: border-box;}
+q:before,q:after{ content:'';}
+
+.cf:before, .cf:after { content:""; display:table;}
+.cf:after { clear:both;}
+
+/* Container
+----------------------------------------------------------------------------------------------------*/
+
+.container {  
+  margin-left: auto; 
+  margin-right: auto; 
+  min-width: 1200px;}
+
+/* menus
+----------------------------------------------------------------------------------------------------*/
+.menu { 
+  width: 240px; 
+  height: 70px; 
+  float: left; 
+  margin-top: 35px; 
+  margin-left: 35px;}
+
+.menu#snd {margin-left: 70px;}
+.menu > div > a{ width: 240px; height: 34px; display: block; background-color: #f4f4f4; padding: 10px 0px 0px 10px;}
+.divider { display: block; height: 1px; width: 240px; background-color: #dfdfdf;}
+.divider_02 { display: block; height: 1px; width: 240px; background-color: #d7d7d7;}
+
+.line { background-color: #e2e2e2; width: 240px; height: 35px; display: block; border-right: 6px solid #e2e2e2;}
+.line > a { height: 35px; display:block; padding: 10px 0px 0px 10px; }
+.line:hover { background-color: #f4f4f4; border-right: 6px solid #0387cf;}
+.line:hover > a > span{ color: #0387cf; }
+
+
+.shadow { -moz-box-shadow: 1px 1px 1px 0px #b7b7b7; -webkit-box-shadow: 1px 1px 1px 0px #b7b7b7; box-shadow: 1px 1px 1px 0px #b7b7b7;}
+.holder_a {position:relative;}
+.holder_b {position:absolute;  visibility: hidden;}
+.holder_c {position:absolute;  left: 240px; visibility: hidden;}
+.holder_d {position:absolute;  left: 240px; visibility: hidden;}
+
+.holder_d > .line { float: left;  width: 300px;}
+
+.holder_b > .line > a { float: left;  }
+.holder_c > .line > a { float: left;  }
+.holder_d > .line > a { float: left;  }
+
+.holder_a:hover > ul.holder_b { visibility: visible; }
+.holder_b > .line:hover > ul.holder_c { visibility: visible; }
+.holder_c > .line:hover > ul.holder_d { visibility: visible; }
+
+.first { z-index: 999;}
+.second { z-index: 1;}
+
+.menu_admin { width: 410px; height: 105px; float: right; margin-top: 35px; margin-right: 35px; text-align: right;}
+.menu_admin > div:first-child { width: 410px; height: 35px; background-color: #f4f4f4; padding-top: 10px; padding-right: 10px;}
+.menu_admin > div:last-child { width: 410px; height: 70px; background-color: #f4f4f4; padding-top: 10px; padding-right: 10px;}
+.menu_admin > div:last-child > span { display: block;} 
+
+
+
